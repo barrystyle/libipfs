@@ -1,0 +1,12 @@
+message JournalEntry {
+	int32 timestamp = 1;
+	string hash = 2;
+	bool pin = 3;
+}
+
+message JournalMessage {
+	int32 current_epoch = 1;
+	int32 start_epoch = 2;
+	int32 end_epoch = 3;
+	repeated JournalEntry journal_entries = 4;
+}
