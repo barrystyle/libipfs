@@ -80,7 +80,8 @@ SOURCES= \
 	commands/cli/parse.c \
 	commands/argument.c \
 	commands/command.c \
-	commands/command_option.c
+	commands/command_option.c \
+	linkage.c
 
 OBJECTS=$(SOURCES:.c=.o)
 OUTPUT=libipfs.a
